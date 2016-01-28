@@ -16,5 +16,12 @@ public class Start {
         System.out.print("course name:" + h.getCourseName()+"\n" +
                            "course number:" + h.getCourseNumber() + "\n" +
                            "credits:"+ h.getCredits());
+        
+        
+        /*
+        This is a good way to qucikly add in alot of methods to every class.
+        But then you have to worry about the dangers of inheritance.
+        You do get the added benefit of being able to use polymorphism.
+        */
     }
 }
