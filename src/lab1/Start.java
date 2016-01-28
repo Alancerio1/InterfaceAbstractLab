@@ -20,7 +20,8 @@ public class Start {
 
         System.out.print("course name:" + h.getCourseName() + "\n"
                 + "course number:" + h.getCourseNumber() + "\n"
-                + "credits:" + h.getCredits());
+                + "credits:" + h.getCredits() + "\n"
+                + "Prerequisites:" + h.getPrerequisites());
 
         /*
          This is a good way to qucikly add in alot of methods to every class.

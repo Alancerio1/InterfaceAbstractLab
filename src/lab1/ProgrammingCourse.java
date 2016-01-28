@@ -13,12 +13,24 @@ public abstract class ProgrammingCourse {
     private String courseName;
     private double credits;
     private int courseNumber;
+    private String prerequisites;
 
-  
+    public String getPrerequisites() {
+        return prerequisites;
+    }
+
+    public void setPrerequisites(String prerequisites) {
+        this.prerequisites = prerequisites;
+    }
+    
+    
+
     public int getCourseNumber() {
         return courseNumber;
     }
 
+  
+  
     public void setCourseNumber(int courseNumber) {
         this.courseNumber = courseNumber;
     }

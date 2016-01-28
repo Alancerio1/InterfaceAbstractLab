@@ -17,11 +17,11 @@ public class IntroJavaCourse extends ProgrammingCourse{
     public int getCourseNumber(){
         return 200;
     }
+    public String getPrerequisites(){
+      return "Intro to programming";
+   }
 
-
-    public String getPrerequisites() {
-        return "Intro to programming";
-    }
+   
 
    
 

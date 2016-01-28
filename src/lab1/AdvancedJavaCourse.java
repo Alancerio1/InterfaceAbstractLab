@@ -19,15 +19,11 @@ public class AdvancedJavaCourse extends ProgrammingCourse {
     public int getCourseNumber(){
         return 100;
     }
-   
+   public String getPrerequisites(){
+       return "Intro to java and Intro to programming";
+   }
 
-    
-    
 
-
-    public String getPrerequisites() {
-        return "Intro to java and Intro to programming";
-    }
 
     public void setPrerequisites(String prerequisites) {
         if(prerequisites == null || prerequisites.length() == 0) {
