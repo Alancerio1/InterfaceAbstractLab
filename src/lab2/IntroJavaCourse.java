@@ -8,19 +8,8 @@ package lab2;
  */
 public class IntroJavaCourse implements ProgrammingCourse{
     
-    private String prerequisites;
+ 
 
-  
-
-   
-
-    public String getPrerequisites() {
-        return prerequisites;
-    }
-
-    public void setPrerequisites(String prerequisites) {
-        this.prerequisites = prerequisites;
-    }
 
        IntroJavaCourse(){
             
@@ -38,4 +27,8 @@ public class IntroJavaCourse implements ProgrammingCourse{
         System.out.println(2);
 
     }
+      public void prerequisites() {
+        System.out.println("Intro to programming course");
+    }
+    
 }

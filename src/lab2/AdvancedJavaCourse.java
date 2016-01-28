@@ -10,7 +10,7 @@ import javax.swing.JOptionPane;
  */
 public class AdvancedJavaCourse implements ProgrammingCourse{
    
-    private String prerequisites;
+  
 
 
 
@@ -31,9 +31,7 @@ public class AdvancedJavaCourse implements ProgrammingCourse{
        
     }
 
-    public String getPrerequisites() {
-        return prerequisites;
-    }
+    
 
     public void setPrerequisites(String prerequisites) {
         if(prerequisites == null || prerequisites.length() == 0) {
@@ -41,7 +39,6 @@ public class AdvancedJavaCourse implements ProgrammingCourse{
                     "Error: prerequisites cannot be null of empty string");
             System.exit(0);
         }
-        this.prerequisites = prerequisites;
     }
 
 
@@ -69,6 +66,9 @@ public class AdvancedJavaCourse implements ProgrammingCourse{
 
     public void credits() {
         System.out.println(4);
+    }
+    public void prerequisites() {
+        System.out.println("Intro to java course and Intro to programming course");
     }
     
 

@@ -18,15 +18,17 @@ public class Start {
        advance.courseName();
        advance.courseNumber();
        advance.credits();
+       advance.prerequisites();
        
        introJava.courseName();
        introJava.courseNumber();
        introJava.credits();
+       introJava.prerequisites();
        
        introProgramming.courseName();
        introProgramming.courseNumber();
        introProgramming.credits();
-       
+       introProgramming.prerequisites();
        
        /*
        I like using interfaces alot more than I do abstarct classes.It's alot easier and claner 

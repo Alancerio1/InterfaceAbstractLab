@@ -59,5 +59,8 @@ public class IntroToProgrammingCourse implements ProgrammingCourse {
     public void credits() {
         System.out.println(1);
     }
+      public void prerequisites() {
+        System.out.println("no prerequisites");
+    }
     
 }
