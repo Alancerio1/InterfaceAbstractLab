@@ -10,7 +10,10 @@ import javax.swing.JOptionPane;
  */
 public class AdvancedJavaCourse implements ProgrammingCourse{
    
-  
+   private String courseName;
+   private double credits;
+   private String prerequisites;
+   private String courseNumber;
 
 
 
@@ -20,6 +23,7 @@ public class AdvancedJavaCourse implements ProgrammingCourse{
                     "Error: courseNumber cannot be null of empty string");
             System.exit(0);
         }
+        this.courseNumber = courseNumber;
     }
 
     public void setCredits(double credits) {
@@ -28,6 +32,7 @@ public class AdvancedJavaCourse implements ProgrammingCourse{
                     "Error: credits must be in the range 0.5 to 4.0");
             System.exit(0);
         }
+        this.credits = credits;
        
     }
 
@@ -39,6 +44,7 @@ public class AdvancedJavaCourse implements ProgrammingCourse{
                     "Error: prerequisites cannot be null of empty string");
             System.exit(0);
         }
+        this.prerequisites = prerequisites;
     }
 
 
@@ -48,27 +54,27 @@ public class AdvancedJavaCourse implements ProgrammingCourse{
                     "Error: courseName cannot be null of empty string");
             System.exit(0);
         }
-        
+        this.courseName = courseName;
     }
 
    
-        AdvancedJavaCourse(){
-            
-        }
+    
 
-    public void courseName() {
-        System.out.println("Advnaced Java");
+    public String getCourseName() {
+       
+        return courseName;
     }
 
-    public void courseNumber() {
-        System.out.println(100);
+    public String getCourseNumber() {
+        return courseNumber;
     }
 
-    public void credits() {
-        System.out.println(4);
+    public double getCredits() {
+        return credits;
     }
-    public void prerequisites() {
-        System.out.println("Intro to java course and Intro to programming course");
+
+    public String getPrerequisites() {
+        return prerequisites;
     }
     
 

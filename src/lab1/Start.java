@@ -14,7 +14,7 @@ public class Start {
     public static void main(String[] args) {
     
         //This allows for liskov substitution
-        ProgrammingCourse h = new IntroToProgrammingCourse();
+        ProgrammingCourse h = new IntroJavaCourse();
       
         //printed out h to fit each variable
         System.out.print("course name: " + h.courseName() + "\n"

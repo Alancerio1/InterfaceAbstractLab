@@ -15,20 +15,38 @@ public class Start {
         IntroJavaCourse introJava = new IntroJavaCourse();
         IntroToProgrammingCourse introProgramming = new IntroToProgrammingCourse();
         
-       advance.courseName();
-       advance.courseNumber();
-       advance.credits();
-       advance.prerequisites();
-       
-       introJava.courseName();
-       introJava.courseNumber();
-       introJava.credits();
-       introJava.prerequisites();
-       
-       introProgramming.courseName();
-       introProgramming.courseNumber();
-       introProgramming.credits();
-       introProgramming.prerequisites();
+      advance.setCourseName("Advanced Java");
+      advance.setCourseNumber("300");
+      advance.setCredits(3);
+      advance.setPrerequisites("intro to java, intro to programming");
+      
+      introJava.setCourseName("Intro to java");
+      introJava.setCourseNumber("200");
+      introJava.setCredits(2);
+      introJava.setPrerequisites("Intro to programmming");
+      
+      introProgramming.setCourseName("Intro to programming");
+      introProgramming.setCourseNumber("100");
+      introProgramming.setCredits(1);
+      introProgramming.setPrerequisites("none");
+      
+        System.out.println("course name:" +advance.getCourseName() + " \n" + "course number:" +
+                advance.getCourseNumber() + "\n" + "Prerequisites:" + advance.getPrerequisites() + 
+                " \n" + "credits:" + advance.getCredits()  );
+        
+        System.out.println("\n");
+        
+        System.out.println("course name:" +introJava.getCourseName() + " \n" + "course number:" +
+                introJava.getCourseNumber() + "\n" + "Prerequisites:" + introJava.getPrerequisites() + 
+                " \n" + "credits:" + introJava.getCredits()  );
+        
+        System.out.println("\n");
+        
+        System.out.println("course name:" +introProgramming.getCourseName() + " \n" + "course number:" +
+                introProgramming.getCourseNumber() + "\n" + "Prerequisites:" + introProgramming.getPrerequisites() + 
+                " \n" + "credits:" + introProgramming.getCredits()  );
+        
+        
        
        /*
        I like using interfaces alot more than I do abstarct classes.It's alot easier and claner 
