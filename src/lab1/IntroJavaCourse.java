@@ -7,31 +7,38 @@ package lab1;
  * @version     1.00
  */
 public class IntroJavaCourse extends ProgrammingCourse{
+    //initalized all my varibales so thet intro to java course has it.
+    private String courseName = "Intro to java course";
+    private double credits = 3.0;
+    private int courseNumber = 300;
+    private String prerequisites ="intro to programming course";
+    //added an override method so that it will fit to the class.
+    @Override
+    public String courseName() {
+        return courseName;
+    }
 
-    public String getCourseName(){
-        return"Intro java";
-        }
-    public  double getCredits(){
-        return 3;
+    @Override
+    public double credits() {
+        return credits;
     }
-    public int getCourseNumber(){
-        return 200;
+
+  
+    @Override
+    public int courseNumber() {
+        return courseNumber;
     }
-    public String getPrerequisites(){
-      return "Intro to programming";
-   }
+
+
+    @Override
+    public String prerequisites() {
+        return prerequisites;
+    }
 
    
 
-   
 
-        public void setCredits(double credits) {
-        if(credits < 0 || credits > 5.0) {
-            System.out.println(
-                    "Error: credits must be in the range 0.5 to 4.0");
-            System.exit(0);
-        }
-        this.setCredits(credits);
-    }
+    
+
 
 }

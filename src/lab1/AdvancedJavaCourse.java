@@ -9,39 +9,30 @@ import javax.swing.JOptionPane;
  * @version     1.00
  */
 public class AdvancedJavaCourse extends ProgrammingCourse {
-
-    public String getCourseName(){
-        return"advanced java";
-        }
-    public  double getCredits(){
-        return 2;
+    //initalized all my varibales so thet advanced java course has it.
+    private String courseName = "Advanced Java";
+    private double credits = 4.0;
+    private int courseNumber = 400;
+    private String prerequisites = "Intro java course and intro to programming";
+    //added an override method so that it will fit to the class.
+    @Override
+    public String courseName(){
+        return courseName;
     }
-    public int getCourseNumber(){
-        return 100;
+    @Override
+    public double credits(){
+        return credits;
     }
-   public String getPrerequisites(){
-       return "Intro to java and Intro to programming";
-   }
-
-
-
-    public void setPrerequisites(String prerequisites) {
-        if(prerequisites == null || prerequisites.length() == 0) {
-            JOptionPane.showMessageDialog(null,
-                    "Error: prerequisites cannot be null of empty string");
-            System.exit(0);
-        }
-        
+    @Override
+    public int courseNumber(){
+        return courseNumber;
     }
-
-    public void setCredits(double credits) {
-        if(credits < 0.5 || credits > 4.0) {
-            JOptionPane.showMessageDialog(null,
-                    "Error: credits must be in the range 0.5 to 4.0");
-            System.exit(0);
-        }
-        this.setCredits(credits);
+    public String prerequisites(){
+        return prerequisites;
     }
+    
+    
+    
 
    
 

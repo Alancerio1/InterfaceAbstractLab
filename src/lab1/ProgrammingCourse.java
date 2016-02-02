@@ -10,48 +10,24 @@ package lab1;
  * @author alancerio18
  */
 public abstract class ProgrammingCourse {
-    private String courseName;
-    private double credits;
-    private int courseNumber;
-    private String prerequisites;
-
-    public String getPrerequisites() {
-        return prerequisites;
-    }
-
-    public void setPrerequisites(String prerequisites) {
-        this.prerequisites = prerequisites;
-    }
-    
-    
-
-    public int getCourseNumber() {
-        return courseNumber;
-    }
-
-  
-  
-    public void setCourseNumber(int courseNumber) {
-        this.courseNumber = courseNumber;
-    }
-    
-    
-
-    public String getCourseName() {
+    //declared all the variables and gave them preset values.
+   private final String courseName = "programming course";
+   private final double credits = 0.0;
+   private final int courseNumber = 000;
+   private final String prerequisites = "classes";
+   //Made them public so the other classes could grab them
+    public String courseName() {
         return courseName;
     }
-
-    public void setCourseName(String courseName) {
-        this.courseName = courseName;
-    }
-
-    public double getCredits() {
+    public double credits(){
         return credits;
     }
-
-    public void setCredits(double credits) {
-        this.credits = credits;
+    public int courseNumber(){
+        return courseNumber;
     }
-    
-    
+    public String prerequisites(){
+        return prerequisites;
+    }
+   
+
 }

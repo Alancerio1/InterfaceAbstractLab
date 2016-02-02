@@ -12,17 +12,17 @@ package lab1;
 public class Start {
 
     public static void main(String[] args) {
-        AdvancedJavaCourse advance = new AdvancedJavaCourse();
-        IntroJavaCourse introJava = new IntroJavaCourse();
-        IntroToProgrammingCourse Intro = new IntroToProgrammingCourse();
-        
-        ProgrammingCourse h = new AdvancedJavaCourse();
-
-        System.out.print("course name:" + h.getCourseName() + "\n"
-                + "course number:" + h.getCourseNumber() + "\n"
-                + "credits:" + h.getCredits() + "\n"
-                + "Prerequisites:" + h.getPrerequisites());
-
+    
+        //This allows for liskov substitution
+        ProgrammingCourse h = new IntroToProgrammingCourse();
+      
+        //printed out h to fit each variable
+        System.out.print("course name: " + h.courseName() + "\n"
+                        +"course credits: " + h.credits()+ "\n"
+                        +"course number: " + h.courseNumber() +"\n"
+                        +"prerequisites: " + h.prerequisites()
+        );
+              
         /*
          This is a good way to qucikly add in alot of methods to every class.
          But then you have to worry about the dangers of inheritance.

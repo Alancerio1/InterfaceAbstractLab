@@ -10,48 +10,37 @@ import javax.swing.JOptionPane;
  * @version 1.00
  */
 public class IntroToProgrammingCourse extends ProgrammingCourse {
+    //initalized all my varibales so thet intro programming course has it.
+    private String courseName = "Intro to programming course";
+    private double credits = 1.0;
+    private int courseNumber = 100;
+    private String prerequisites = "none";
+        //added an override method so that it will fit to the class.
 
-    public String getCourseName() {
-        return "Intro to programming";
+    @Override
+    public String courseName() {
+        return courseName;
     }
 
-    public double getCredits() {
-        return 4;
+    @Override
+    public double credits() {
+        return credits;
     }
 
-    public int getCourseNumber() {
-        return 300;
+  
+    @Override
+    public int courseNumber() {
+        return courseNumber;
     }
 
-    public String getPrerequisites() {
-        return "no prerequisites";
+
+    @Override
+    public String prerequisites() {
+        return prerequisites;
     }
 
-    public final void setCourseNumber(String courseNumber) {
-        if (courseNumber == null || courseNumber.length() == 0) {
-            JOptionPane.showMessageDialog(null,
-                    "Error: courseNumber cannot be null of empty string");
-            System.exit(0);
-        }
 
-    }
-
-    public void setCredits(double credits) {
-        if (credits < 0.5 || credits > 4.0) {
-            JOptionPane.showMessageDialog(null,
-                    "Error: credits must be in the range 0.5 to 4.0");
-            System.exit(0);
-        }
-
-    }
-
-    public final void setCourseName(String courseName) {
-        if (courseName == null || courseName.length() == 0) {
-            JOptionPane.showMessageDialog(null,
-                    "Error: courseName cannot be null of empty string");
-            System.exit(0);
-        }
-
-    }
+   
+    
 
 }
