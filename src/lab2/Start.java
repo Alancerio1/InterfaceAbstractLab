@@ -11,10 +11,11 @@ package lab2;
  */
 public class Start {
     public static void main(String[] args) {
+        //creating objects for the classes
         AdvancedJavaCourse advance = new AdvancedJavaCourse();
         IntroJavaCourse introJava = new IntroJavaCourse();
         IntroToProgrammingCourse introProgramming = new IntroToProgrammingCourse();
-        
+        //setting the varibales to be used
       advance.setCourseName("Advanced Java");
       advance.setCourseNumber("300");
       advance.setCredits(3);
@@ -29,7 +30,7 @@ public class Start {
       introProgramming.setCourseNumber("100");
       introProgramming.setCredits(1);
       introProgramming.setPrerequisites("none");
-      
+      //prinitng out everything
         System.out.println("course name:" +advance.getCourseName() + " \n" + "course number:" +
                 advance.getCourseNumber() + "\n" + "Prerequisites:" + advance.getPrerequisites() + 
                 " \n" + "credits:" + advance.getCredits()  );

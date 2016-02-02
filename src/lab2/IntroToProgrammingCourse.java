@@ -9,12 +9,12 @@ import javax.swing.JOptionPane;
  * @version 1.00
  */
 public class IntroToProgrammingCourse implements ProgrammingCourse {
-
+//initalizing all the variables
     private String courseName;
     private String courseNumber;
     private double credits;
     private String prerequisites;
-
+//all the getters and setters
     public String getCourseName() {
         return courseName;
     }

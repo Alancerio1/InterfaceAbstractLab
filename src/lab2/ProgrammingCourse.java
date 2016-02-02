@@ -10,6 +10,7 @@ package lab2;
  * @author alancerio18
  */
 public interface ProgrammingCourse {
+    //setting all the common methods in all the classes.
     public abstract String getCourseName();
     public abstract void setCourseName(String courseName);
     
